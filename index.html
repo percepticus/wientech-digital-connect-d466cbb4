@@ -30,15 +30,62 @@
     <!-- Preload critical assets -->
     <link rel="preload" href="/lovable-uploads/0bbb7f0c-e875-4bd3-a8cb-231b769fe0ad.png" as="image" type="image/png">
     
-    <!-- Critical CSS inline -->
+    <!-- Critical CSS inline - expanded for better performance -->
     <style>
       /* Critical above-the-fold styles */
-      body { margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
-      .hero-container { min-height: 100vh; background: linear-gradient(135deg, #464646 0%, #1f2937 50%, #000000 100%); }
+      * { box-sizing: border-box; }
+      body { 
+        margin: 0; 
+        padding: 0; 
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .hero-container { 
+        min-height: 100vh; 
+        background: linear-gradient(135deg, #464646 0%, #1f2937 50%, #000000 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      /* Navigation critical styles */
+      nav { 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        z-index: 50; 
+        transition: all 0.3s ease;
+      }
+      .nav-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+      }
+      @media (min-width: 640px) {
+        .nav-container { height: 5rem; padding: 0 1.5rem; }
+      }
+      @media (min-width: 1024px) {
+        .nav-container { padding: 0 2rem; }
+      }
+      /* Logo critical styles */
+      .logo { height: 2rem; width: auto; cursor: pointer; }
+      @media (min-width: 640px) {
+        .logo { height: 2.5rem; }
+      }
+      /* Hide content until CSS loads */
+      .content-hidden { opacity: 0; }
+      .content-visible { opacity: 1; transition: opacity 0.3s ease; }
     </style>
     
-    <!-- Non-critical CSS with media query trick -->
-    <link rel="preload" href="/assets/index-CyUkH_ee.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- Non-critical CSS with optimized loading -->
+    <link rel="preload" href="/assets/index-CyUkH_ee.css" as="style" onload="this.onload=null;this.rel='stylesheet';document.body.classList.add('content-visible');">
     <noscript><link rel="stylesheet" href="/assets/index-CyUkH_ee.css"></noscript>
 
     <!-- Deferred Google Analytics with intersection observer -->
@@ -73,10 +120,19 @@
       
       // Fallback: load after 3 seconds if no interaction
       setTimeout(loadGoogleAnalytics, 3000);
+      
+      // Ensure content visibility fallback
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          if (!document.body.classList.contains('content-visible')) {
+            document.body.classList.add('content-visible');
+          }
+        }, 100);
+      });
     </script>
   </head>
 
-  <body>
+  <body class="content-hidden">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
