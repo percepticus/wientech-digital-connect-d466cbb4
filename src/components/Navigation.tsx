@@ -51,7 +51,11 @@ export const Navigation = ({
           <img 
             src="/lovable-uploads/0bbb7f0c-e875-4bd3-a8cb-231b769fe0ad.png" 
             alt="WIENTech Logo" 
-            className="logo"
+            className={`logo transition-all duration-300 ${
+              isScrolled 
+                ? 'brightness-100' 
+                : 'brightness-0 invert'
+            }`}
             width={80}
             height={32}
             onClick={() => handleNavigation('home')}
