@@ -1,6 +1,7 @@
 
+import React from 'react';
 import { Cpu, Network, Zap, Link, Globe, Settings } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { ServiceCard } from '@/components/ui/service-card';
 
 interface ServicesPageProps {
   translations: any;
@@ -60,25 +61,13 @@ export const ServicesPage = ({ translations }: ServicesPageProps) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 shadow-lg">
-              <CardHeader className="text-center pb-4">
-                <div className="mb-4 flex justify-center">{service.icon}</div>
-                <CardTitle className="text-xl font-bold text-gray-900">
-                  {service.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-6">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-gray-700">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            <ServiceCard
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+              features={service.features}
+            />
           ))}
         </div>
       </div>

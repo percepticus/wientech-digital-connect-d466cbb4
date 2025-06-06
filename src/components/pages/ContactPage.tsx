@@ -1,13 +1,38 @@
 
+import React from 'react';
 import { Mail, Phone, MessageCircle, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { ContactInfoCard } from '@/components/ui/contact-info-card';
 
 interface ContactPageProps {
   translations: any;
 }
 
 export const ContactPage = ({ translations }: ContactPageProps) => {
+  const contactInfo = [
+    {
+      icon: <Mail className="w-6 h-6 sm:w-8 sm:h-8 text-red-500" />,
+      title: translations.contact.info.email,
+      content: 'velko.spasov@wientech.at'
+    },
+    {
+      icon: <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-red-500" />,
+      title: translations.contact.info.phone,
+      content: '+43 664 355 9835'
+    },
+    {
+      icon: <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-red-500" />,
+      title: translations.contact.address,
+      content: (
+        <>
+          Wien, 1040 Bezirk<br />
+          Theresianumgasse 7/2/7<br />
+          Mobil
+        </>
+      )
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,61 +48,14 @@ export const ContactPage = ({ translations }: ContactPageProps) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Contact Information Cards */}
           <div className="space-y-6">
-            <Card className="shadow-lg border-0 hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-6 sm:p-8">
-                <div className="flex items-start space-x-4 sm:space-x-6">
-                  <div className="bg-red-100 p-3 sm:p-4 rounded-full flex-shrink-0">
-                    <Mail className="w-6 h-6 sm:w-8 sm:h-8 text-red-500" />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 break-words">
-                      {translations.contact.info.email}
-                    </h3>
-                    <p className="text-gray-600 text-base sm:text-lg break-all">
-                      velko.spasov@wientech.at
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-lg border-0 hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-6 sm:p-8">
-                <div className="flex items-start space-x-4 sm:space-x-6">
-                  <div className="bg-red-100 p-3 sm:p-4 rounded-full flex-shrink-0">
-                    <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-red-500" />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 break-words">
-                      {translations.contact.info.phone}
-                    </h3>
-                    <p className="text-gray-600 text-base sm:text-lg">
-                      +43 664 355 9835
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-lg border-0 hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-6 sm:p-8">
-                <div className="flex items-start space-x-4 sm:space-x-6">
-                  <div className="bg-red-100 p-3 sm:p-4 rounded-full flex-shrink-0">
-                    <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-red-500" />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 break-words">
-                      {translations.contact.address}
-                    </h3>
-                    <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                      Wien, 1040 Bezirk<br />
-                      Theresianumgasse 7/2/7<br />
-                      Mobil
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            {contactInfo.map((info, index) => (
+              <ContactInfoCard
+                key={index}
+                icon={info.icon}
+                title={info.title}
+                content={info.content}
+              />
+            ))}
           </div>
 
           {/* CTA Section */}
