@@ -22,6 +22,20 @@ export const ProjectCard = ({ client, logo, description, logoHeight = 'large' }:
     }
   };
 
+  const getDimensions = () => {
+    switch (logoHeight) {
+      case 'small':
+        return { width: 120, height: 32 };
+      case 'medium':
+        return { width: 150, height: 40 };
+      case 'large':
+      default:
+        return { width: 180, height: 48 };
+    }
+  };
+
+  const dimensions = getDimensions();
+
   return (
     <Card className="hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
       <CardContent className="p-8">
@@ -30,6 +44,9 @@ export const ProjectCard = ({ client, logo, description, logoHeight = 'large' }:
             src={logo} 
             alt={`${client} Logo`}
             className={getLogoClass()}
+            width={dimensions.width}
+            height={dimensions.height}
+            loading="lazy"
           />
           <h3 className="text-xl font-semibold text-gray-900">{client}</h3>
         </div>

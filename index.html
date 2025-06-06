@@ -23,14 +23,34 @@
     <link rel="icon" href="/lovable-uploads/0bbb7f0c-e875-4bd3-a8cb-231b769fe0ad.png" type="image/png">
     <link rel="canonical" href="https://wientech.at" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-582WP6J0SQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="/assets/index-BauDmWAl.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/index-BauDmWAl.css"></noscript>
 
-      gtag('config', 'G-582WP6J0SQ');
+    <!-- Deferred Google Analytics -->
+    <script>
+      function loadGoogleAnalytics() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-582WP6J0SQ';
+        document.head.appendChild(script);
+        
+        script.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-582WP6J0SQ');
+        };
+      }
+      
+      // Load Google Analytics after page load
+      if (document.readyState === 'complete') {
+        setTimeout(loadGoogleAnalytics, 1000);
+      } else {
+        window.addEventListener('load', function() {
+          setTimeout(loadGoogleAnalytics, 1000);
+        });
+      }
     </script>
   </head>
 

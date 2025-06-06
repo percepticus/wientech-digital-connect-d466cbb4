@@ -26,6 +26,9 @@ export const ClientLogos = ({ logos, title }: ClientLogosProps) => {
                 src={logo.src} 
                 alt={`Client ${index + 1}`}
                 className={`${logo.className} w-auto opacity-70 hover:opacity-100 transition-opacity duration-300`}
+                width={120}
+                height={48}
+                loading="lazy"
               />
             </div>
           ))}
