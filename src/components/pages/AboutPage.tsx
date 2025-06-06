@@ -105,7 +105,7 @@ export const AboutPage = ({ translations }: AboutPageProps) => {
                     <img 
                       src={project.logo} 
                       alt={`${project.client} Logo`}
-                      className={project.client === 'FRC Digital' ? "h-8 w-auto mr-4" : "h-12 w-auto mr-4"}
+                      className={project.client === '' ? "h-6 w-auto mr-4" : "h-12 w-auto mr-4"}
                     />
                     <h3 className="text-xl font-semibold text-gray-900">{project.client}</h3>
                   </div>
