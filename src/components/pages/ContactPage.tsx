@@ -18,7 +18,7 @@ export const ContactPage = ({ translations }: ContactPageProps) => {
     {
       icon: <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-red-500" />,
       title: translations.contact.info.phone,
-      content: '+43 664 355 9835'
+      content: '+43 664 5162910'
     },
     {
       icon: <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-red-500" />,
@@ -72,7 +72,7 @@ export const ContactPage = ({ translations }: ContactPageProps) => {
             <div className="space-y-4">
               <Button 
                 className="w-full bg-green-600 hover:bg-green-700 text-white py-3 sm:py-4 text-base sm:text-lg font-semibold"
-                onClick={() => window.open('https://wa.me/436643559835', '_blank')}
+                onClick={() => window.open('https://wa.me/436645162910', '_blank')}
               >
                 <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 flex-shrink-0" />
                 <span className="break-words">{translations.contact.cta.whatsapp}</span>
@@ -81,7 +81,7 @@ export const ContactPage = ({ translations }: ContactPageProps) => {
               <Button 
                 variant="outline" 
                 className="w-full border-red-500 text-red-500 hover:bg-red-500 hover:text-white py-3 sm:py-4 text-base sm:text-lg font-semibold"
-                onClick={() => window.open('tel:+436643559835')}
+                onClick={() => window.open('tel:+436645162910')}
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 flex-shrink-0" />
                 <span className="break-words">{translations.contact.cta.call}</span>

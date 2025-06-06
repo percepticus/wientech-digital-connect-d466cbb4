@@ -73,7 +73,7 @@ export const ImpressumPage = ({ translations }: ImpressumPageProps) => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-red-500" />
-                <span className="text-gray-600">+43 664 355 9835</span>
+                <span className="text-gray-600">+43 664 5162910</span>
               </div>
             </CardContent>
           </Card>

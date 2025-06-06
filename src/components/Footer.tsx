@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MessageCircle } from 'lucide-react';
 
 interface FooterProps {
@@ -64,11 +65,11 @@ export const Footer = ({ translations }: FooterProps) => {
               </div>
               <div className="flex items-center text-gray-300 text-sm">
                 <Phone className="w-4 h-4 mr-2 text-red-500" />
-                +43 664 355 9835
+                +43 664 5162910
               </div>
               <div className="flex items-center text-gray-300 text-sm">
                 <MessageCircle className="w-4 h-4 mr-2 text-red-500" />
-                WhatsApp: +43 664 355 9835
+                WhatsApp: +43 664 5162910
               </div>
             </div>
           </div>
