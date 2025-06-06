@@ -30,9 +30,9 @@ export const Footer = ({ translations }: FooterProps) => {
             <img 
               src="/lovable-uploads/0bbb7f0c-e875-4bd3-a8cb-231b769fe0ad.png" 
               alt="WIENTech Logo" 
-              className="h-12 w-auto mb-4 cursor-pointer"
-              width={180}
-              height={48}
+              className="h-10 w-auto mb-4 cursor-pointer"
+              width={150}
+              height={40}
               loading="lazy"
               style={{
                 filter: 'brightness(0) saturate(100%) invert(1) hue-rotate(0deg) brightness(1) contrast(1)',
@@ -92,9 +92,9 @@ export const Footer = ({ translations }: FooterProps) => {
           <img 
             src="/lovable-uploads/0bbb7f0c-e875-4bd3-a8cb-231b769fe0ad.png" 
             alt="WIENTech Logo" 
-            className="h-8 w-auto mx-auto mb-4 opacity-50 cursor-pointer"
-            width={120}
-            height={32}
+            className="h-6 w-auto mx-auto mb-4 opacity-50 cursor-pointer"
+            width={90}
+            height={24}
             loading="lazy"
             style={{
               filter: 'brightness(0) saturate(100%) invert(1) hue-rotate(0deg) brightness(1) contrast(1)',

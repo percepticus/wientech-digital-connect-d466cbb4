@@ -52,11 +52,12 @@ export const Navigation = ({
             <img 
               src="/lovable-uploads/0bbb7f0c-e875-4bd3-a8cb-231b769fe0ad.png" 
               alt="WIENTech Logo" 
-              className="h-8 sm:h-12 w-auto cursor-pointer"
-              width={150}
-              height={48}
+              className="h-8 sm:h-10 w-auto cursor-pointer"
+              width={120}
+              height={40}
               onClick={() => handleNavigation('home')}
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
             />
           </div>
 
