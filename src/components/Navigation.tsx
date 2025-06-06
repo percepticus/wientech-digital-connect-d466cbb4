@@ -56,6 +56,7 @@ export const Navigation = ({
               width={150}
               height={48}
               onClick={() => handleNavigation('home')}
+              loading="lazy"
             />
           </div>
 
@@ -75,7 +76,6 @@ export const Navigation = ({
             <LanguageSwitcher
               currentLanguage={currentLanguage}
               onLanguageChange={onLanguageChange}
-              isScrolled={isScrolled}
             />
           </div>
 
@@ -84,7 +84,6 @@ export const Navigation = ({
             <LanguageSwitcher
               currentLanguage={currentLanguage}
               onLanguageChange={onLanguageChange}
-              isScrolled={isScrolled}
             />
             <Button
               variant="ghost"
