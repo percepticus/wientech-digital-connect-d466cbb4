@@ -136,7 +136,7 @@ export const translations = {
       description3: 'Von der ersten Förderfähigkeitsanalyse bis zur erfolgreichen Projektübergabe – wir sorgen dafür, dass Ihre geförderten Digitalisierungs-, Automatisierungs- und Innovationsprojekte nicht nur bewilligt, sondern auch technisch erfolgreich realisiert werden.',
       services: 'Ob Industrie 4.0-Implementierung, IoT-Lösungen, ERP-Integration oder digitale Vertriebskanäle – wir verstehen die technischen Anforderungen, die Förderprogramme stellen.',
       benefits: 'Unsere Kunden aus KMU, Industrie und Start-ups profitieren von lückenloser Projektdokumentation, förderkonformem Management und der Sicherheit, dass ihre Investition den gewünschten digitalen Mehrwert liefert.',
-      result: 'Das Ergebnis: Bis zu 80% Förderung für Projekte, die tatsächlich funktionieren und Ihr Unternehmen nachhaltig digitalisieren.',
+      result: 'Das Ergebnis: Bis zu 80% EU-Förderung für Digitalisierung, Industrie 4.0, IoT-Implementierung und Systemintegration. KMU, Start-ups und Industrieunternehmen profitieren von förderfähigen Softwareentwicklungs- und Automatisierungsprojekten, die nachhaltig digitalisieren.',
       programs: {
         digitalJetzt: 'Digital Jetzt',
         awsDigitization: 'aws Digitalisierung',
@@ -288,7 +288,7 @@ export const translations = {
       description3: 'From initial eligibility analysis to successful project handover – we ensure your subsidized digitization, automation, and innovation projects are not only approved but also technically successful.',
       services: 'Whether Industry 4.0 implementation, IoT solutions, ERP integration, or digital sales channels – we understand the technical requirements that funding programs expect.',
       benefits: 'Our clients from SMEs, industry, and start-ups benefit from comprehensive project documentation, funding-compliant management, and the confidence that their investment delivers the desired digital added value.',
-      result: 'The result: Up to 80% funding for projects that actually work and sustainably digitize your business.',
+      result: 'The result: Up to 80% EU funding for digitization, Industry 4.0, IoT implementation and system integration. SMEs, start-ups and industrial companies benefit from eligible software development and automation projects that sustainably digitize.',
       programs: {
         digitalJetzt: 'Digital Jetzt',
         awsDigitization: 'aws Digitization',
