@@ -15,7 +15,7 @@ export const FundingSection = ({ translations }: FundingSectionProps) => {
   ];
 
   return (
-    <section id="digitalEurope" className="py-12 md:py-20 bg-gray-50 min-h-screen md:min-h-0">
+    <section id="digitalEurope" className="py-12 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 md:mb-12 pt-20 md:pt-0">
