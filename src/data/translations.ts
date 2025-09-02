@@ -127,9 +127,14 @@ export const translations = {
       linksLiabilityText: 'Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.'
     },
     funding: {
-      title: 'Geförderte Digitalisierung – technisch umgesetzt',
-      description1: 'Warum Fördermittel beantragen, wenn die technische Umsetzung scheitert? Als wientech.at verbinden wir bewährte Expertise in Systemintegration und Softwareentwicklung mit professioneller Fördermittelberatung. Unsere Erfolgsbilanz: Unternehmen in Deutschland und Österreich, die mit unserer Beratung Fördergelder gewonnen und ihre technischen Lösungen erfolgreich implementiert haben. Von der ersten Förderfähigkeitsanalyse bis zur erfolgreichen Projektübergabe – wir sorgen dafür, dass Ihre geförderten Digitalisierungs-, Automatisierungs- und Innovationsprojekte nicht nur bewilligt, sondern auch technisch erfolgreich realisiert werden.',
-      description2: 'Ob Industrie 4.0-Implementierung, IoT-Lösungen, ERP-Integration oder digitale Vertriebskanäle – wir verstehen die technischen Anforderungen, die Förderprogramme wie Digital Jetzt, aws Digitalisierung, KMU.DIGITAL und EFRE an förderfähige Projekte stellen. Unsere Kunden aus KMU, Industrie und Start-ups profitieren von lückenloser Projektdokumentation, förderkonformem Management und der Sicherheit, dass ihre Investition den gewünschten digitalen Mehrwert liefert.',
+      title: 'EU Förderung für Digitalisierung: Digital Jetzt, aws, KMU.DIGITAL & EFRE',
+      subtitle: 'Technische Expertise trifft professionelle Fördermittelberatung',
+      intro: 'Warum Fördermittel beantragen, wenn die technische Umsetzung scheitert?',
+      description1: 'Als wientech.at verbinden wir bewährte Expertise in Systemintegration und Softwareentwicklung mit professioneller Fördermittelberatung.',
+      description2: 'Unsere Erfolgsbilanz: Unternehmen in Deutschland und Österreich, die mit unserer Beratung Fördergelder gewonnen und ihre technischen Lösungen erfolgreich implementiert haben.',
+      description3: 'Von der ersten Förderfähigkeitsanalyse bis zur erfolgreichen Projektübergabe – wir sorgen dafür, dass Ihre geförderten Digitalisierungs-, Automatisierungs- und Innovationsprojekte nicht nur bewilligt, sondern auch technisch erfolgreich realisiert werden.',
+      services: 'Ob Industrie 4.0-Implementierung, IoT-Lösungen, ERP-Integration oder digitale Vertriebskanäle – wir verstehen die technischen Anforderungen, die Förderprogramme stellen.',
+      benefits: 'Unsere Kunden aus KMU, Industrie und Start-ups profitieren von lückenloser Projektdokumentation, förderkonformem Management und der Sicherheit, dass ihre Investition den gewünschten digitalen Mehrwert liefert.',
       result: 'Das Ergebnis: Bis zu 80% Förderung für Projekte, die tatsächlich funktionieren und Ihr Unternehmen nachhaltig digitalisieren.',
       programs: {
         digitalJetzt: 'Digital Jetzt',
@@ -273,9 +278,14 @@ export const translations = {
       linksLiabilityText: 'Our website contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages.'
     },
     funding: {
-      title: 'Subsidized Digitization – Technically Delivered',
-      description1: 'Why apply for funding if technical implementation fails? At wientech.at, we combine proven expertise in system integration and software development with professional funding consultation. Our track record: businesses in Germany and Austria that have won funding and successfully implemented their technical solutions with our advisory. From initial eligibility analysis to successful project handover – we ensure your subsidized digitization, automation, and innovation projects are not only approved but also technically successful.',
-      description2: 'Whether Industry 4.0 implementation, IoT solutions, ERP integration, or digital sales channels – we understand the technical requirements that funding programs like Digital Jetzt, aws Digitization, KMU.DIGITAL, and EFRE expect from eligible projects. Our clients from SMEs, industry, and start-ups benefit from comprehensive project documentation, funding-compliant management, and the confidence that their investment delivers the desired digital added value.',
+      title: 'EU Funding for Digitization: Digital Jetzt, aws, KMU.DIGITAL & EFRE',
+      subtitle: 'Technical expertise meets professional funding consultation',
+      intro: 'Why apply for funding if technical implementation fails?',
+      description1: 'At wientech.at, we combine proven expertise in system integration and software development with professional funding consultation.',
+      description2: 'Our track record: businesses in Germany and Austria that have won funding and successfully implemented their technical solutions with our advisory.',
+      description3: 'From initial eligibility analysis to successful project handover – we ensure your subsidized digitization, automation, and innovation projects are not only approved but also technically successful.',
+      services: 'Whether Industry 4.0 implementation, IoT solutions, ERP integration, or digital sales channels – we understand the technical requirements that funding programs expect.',
+      benefits: 'Our clients from SMEs, industry, and start-ups benefit from comprehensive project documentation, funding-compliant management, and the confidence that their investment delivers the desired digital added value.',
       result: 'The result: Up to 80% funding for projects that actually work and sustainably digitize your business.',
       programs: {
         digitalJetzt: 'Digital Jetzt',
