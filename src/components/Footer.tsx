@@ -15,7 +15,7 @@ export const Footer = ({ translations }: FooterProps) => {
 
   const navItems = [
     { key: 'services', label: translations.nav.services },
-    { key: 'selected-projects', label: translations.nav.projects },
+    { key: 'digitalEurope', label: translations.nav.digitalEurope },
     { key: 'about', label: translations.nav.about },
     { key: 'contact', label: translations.nav.contact },
     { key: 'impressum', label: translations.nav.impressum },

@@ -3,6 +3,7 @@ export const translations = {
     nav: {
       home: 'Startseite',
       services: 'Dienstleistungen',
+      digitalEurope: 'Digital Europe',
       about: 'Über uns',
       projects: 'Projekte',
       contact: 'Kontakt',
@@ -154,6 +155,7 @@ export const translations = {
     nav: {
       home: 'Home',
       services: 'Services',
+      digitalEurope: 'Digital Europe',
       about: 'About',
       projects: 'Projects',
       contact: 'Contact',
