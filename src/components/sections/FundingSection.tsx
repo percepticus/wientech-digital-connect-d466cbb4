@@ -15,21 +15,21 @@ export const FundingSection = ({ translations }: FundingSectionProps) => {
   ];
 
   return (
-    <section id="digitalEurope" className="py-20 bg-gray-50">
+    <section id="digitalEurope" className="py-12 md:py-20 bg-gray-50 min-h-screen md:min-h-0">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          <div className="text-center mb-8 md:mb-12 pt-20 md:pt-0">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
               {translations.funding.title}
             </h2>
-            <p className="text-xl text-gray-600 font-medium">
+            <p className="text-lg md:text-xl text-gray-600 font-medium px-4">
               {translations.funding.subtitle}
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
             <Card className="border-0 shadow-lg">
-              <CardContent className="p-8">
+              <CardContent className="p-6 md:p-8">
                 <h3 className="text-xl font-semibold text-red-600 mb-4">
                   {translations.funding.intro}
                 </h3>
@@ -43,7 +43,7 @@ export const FundingSection = ({ translations }: FundingSectionProps) => {
             </Card>
             
             <Card className="border-0 shadow-lg">
-              <CardContent className="p-8">
+              <CardContent className="p-6 md:p-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   Unsere Expertise
                 </h3>
@@ -72,7 +72,7 @@ export const FundingSection = ({ translations }: FundingSectionProps) => {
           </div>
           
           <Card className="border-0 shadow-lg bg-gradient-to-r from-red-600 to-red-700">
-            <CardContent className="p-8 text-center">
+            <CardContent className="p-6 md:p-8 text-center">
               <p className="text-xl font-bold text-white">
                 {translations.funding.result}
               </p>
