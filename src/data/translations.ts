@@ -142,7 +142,9 @@ export const translations = {
         awsDigitization: 'aws Digitalisierung',
         kmuDigital: 'KMU.DIGITAL',
         efre: 'EFRE'
-      }
+      },
+      expertise: 'Unsere Expertise',
+      programsLabel: 'Förderprogramme:'
     },
     footer: {
       description: 'Verbindung von Technologien für optimale Geschäftsprozesse',
@@ -294,7 +296,9 @@ export const translations = {
         awsDigitization: 'aws Digitization',
         kmuDigital: 'KMU.DIGITAL',
         efre: 'EFRE'
-      }
+      },
+      expertise: 'Our Expertise',
+      programsLabel: 'Funding Programs:'
     },
     footer: {
       description: 'Connecting technologies for optimal business processes',

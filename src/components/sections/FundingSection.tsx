@@ -45,7 +45,7 @@ export const FundingSection = ({ translations }: FundingSectionProps) => {
             <Card className="border-0 shadow-lg">
               <CardContent className="p-6 md:p-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  Unsere Expertise
+                  {translations.funding.expertise}
                 </h3>
                 
                 <div className="space-y-4 text-gray-700">
@@ -54,7 +54,7 @@ export const FundingSection = ({ translations }: FundingSectionProps) => {
                 </div>
                 
                 <div className="mt-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">Förderprogramme:</h4>
+                  <h4 className="font-semibold text-gray-900 mb-3">{translations.funding.programsLabel}</h4>
                   <div className="flex flex-wrap gap-2">
                     {programs.map((program, index) => (
                       <Badge 
