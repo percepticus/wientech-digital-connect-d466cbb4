@@ -30,7 +30,6 @@ export const Navigation = ({
   }, []);
 
   const navItems = [
-    { key: 'home', label: translations.nav.home },
     { key: 'services', label: translations.nav.services },
     { key: 'about', label: translations.nav.about },
     { key: 'contact', label: translations.nav.contact },
@@ -59,7 +58,7 @@ export const Navigation = ({
               }`}
               width={80}
               height={32}
-              onClick={() => handleNavigation('home')}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               loading="eager"
               fetchPriority="high"
             />
